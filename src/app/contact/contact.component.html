@@ -2,15 +2,15 @@
 
 <!-- Contact Form -->
 <div class="container d-flex justify-content-center">
-  <form class="d-flex flex-column col-lg-6" [formGroup]="contact" (ngSubmit)="submitForm()">
-    
-    <input type="text" placeholder="Your First Name" formControlName="firstName">
-    <br>
-    <input type="text" placeholder="Your Last Name" formControlName="lastName">
-    <br>
-    <input type="email" placeholder="Your E-Mail" formControlName="eMail">
-    <br>
-    <textarea type="text" placeholder="Your Message" rows="6" formControlName="textArea"></textarea>
-    <input type="submit" class="btn btn-success border-0 mt-3 mb-5" value="Submit">
-  </form>
+    <form class="d-flex flex-column col-lg-6" [formGroup]="contact" (ngSubmit)="submitForm()">
+        <input type="text" placeholder="Your First Name" formControlName="firstName">
+        <br>
+        <input type="text" placeholder="Your Last Name" formControlName="lastName">
+        <br>
+        <input type="email" placeholder="Your E-Mail" formControlName="eMail">
+        <br>
+        <textarea type="text" placeholder="Your Message" rows="4" formControlName="textArea"></textarea>
+        <div class="row justify-content-center">
+            <input type="submit" class="btn btn-primary border-0 mt-3 mb-5 col-lg-3" value="Submit"></div>
+    </form>
 </div>

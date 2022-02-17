@@ -3,23 +3,25 @@
     <div class="row justify-content-center g-5">
 
 
-        <div class="col-lg-5">
+        <div class="col-lg-5 mb-3" *ngFor="let val of blog">
             <h1>I´m here again</h1>
-            <p>Written by: </p>
-            <p>Date: </p>
-            <p>Location: </p>
+            <p>Written by: {{val.author}} </p>
+            <p>Date: {{val.datetime}} </p>
+            <p>Location: {{val.location}} </p>
             <img src="https://cdn.pixabay.com/photo/2021/08/21/10/36/mountains-6562436__340.jpg" alt="" style="width:70%;">
-            <p>
+            <p class="mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laudantium eaque aspernatur, doloribus illo saepe ullam aliquam eligendi molestiae, culpa amet unde fugiat quasi et incidunt, qui voluptatem. Magni, atque. Impedit sapiente beatae doloremque
                 quasi accusamus iusto facilis laudantium veniam ipsa excepturi molestiae aliquid voluptates, assumenda saepe temporibus sed ab nemo nobis reprehenderit nisi suscipit neque pariatur praesentium iste. Quod? Animi nesciunt provident non dolores.
             </p>
         </div>
 
-        <div class="col-lg-5">
+        <div class="col-lg-5 mb-3" *ngFor="let val of blog">
             <h1>Weekends were amazing</h1>
-
+            <p>Written by: {{val.author}} </p>
+            <p>Date: {{val.datetime}} </p>
+            <p>Location: {{val.location}} </p>
             <img src="https://cdn.pixabay.com/photo/2022/02/06/06/24/mountains-6996317__340.jpg" alt="" style="width:70%;">
-            <p>
+            <p class="mt-3">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nulla amet sit accusantium veritatis, placeat quo est aliquam porro ducimus deleniti reprehenderit atque suscipit labore similique non veniam magni perferendis! Tempora fugit consequatur
                 doloribus adipisci dignissimos voluptatum nobis maiores nihil, omnis amet corrupti quae excepturi. Sunt nobis doloremque doloribus error fuga saepe laboriosam dignissimos dicta nulla, mollitia accusantium, voluptatem rem! Excepturi, quisquam
                 blanditiis, non provident, repellat harum veniam pariatur animi facere atque facilis dicta. Laborum rem nobis reiciendis minima dolorum repellat veniam deleniti molestias illum. Fuga ex neque praesentium quod! Deleniti sit vitae ipsam

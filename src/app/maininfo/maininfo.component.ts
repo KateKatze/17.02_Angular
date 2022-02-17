@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaininfoComponent implements OnInit {
 
+  blog: Array<{author: string, datetime: string, location: string}> = [
+    {
+      author: "Joe Doe",
+      datetime: Date(),
+      location: "Salzburg"
+    }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
