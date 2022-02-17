@@ -13,6 +13,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AboutPageComponent } from './about-page/about-page.component';
 import {NgbPaginationModule, NgbAlertModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import { HttpClientModule } from '@angular/common/http';
+import { CountryListComponent } from './country-list/country-list.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,14 +23,17 @@ import {NgbPaginationModule, NgbAlertModule, NgbModule} from '@ng-bootstrap/ng-b
     FooterComponent,
     MaininfoComponent,
     ContactComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    CountryListComponent
   ],
+  entryComponents: [],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FontAwesomeModule,
-    NgbModule,NgbPaginationModule, NgbAlertModule
+    NgbModule,NgbPaginationModule, NgbAlertModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

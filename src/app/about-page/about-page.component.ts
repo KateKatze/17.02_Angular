@@ -8,7 +8,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./about-page.component.css']
 })
 export class AboutPageComponent implements OnInit {
-  facoffee= faCoffee; 
+  facoffee = faCoffee; 
   infos: Array<{name: string, date: string, address: string, tel: string, description: string}> = [
     {
       name: "Joe Doe",
