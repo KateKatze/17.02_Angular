@@ -9,6 +9,7 @@ import { MaininfoComponent } from './maininfo/maininfo.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     MaininfoComponent,
-    ContactComponent
+    ContactComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
