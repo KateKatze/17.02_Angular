@@ -1,1 +1,29 @@
-<p>about-page works!</p>
+<h2 class="text-center m-3">About Us</h2>
+<div class="container mt-3 mb-3 d-flex justify-content-center">
+  <div>
+    <img class="ms-4 mt-3" src="https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907__340.jpg" alt="pic">
+
+  </div>
+  <div class="container p-4" *ngFor="let info of infos">
+    <h4 class="mt-2">{{info.name}}</h4>
+    <br>
+    <p><b>Date of Birth:</b> {{info.date}} </p>
+    <br>
+    <p><b>Address:</b>  {{info.address}}</p>
+    <br>
+    <p><b>Tel.:</b>  {{info.tel}}</p>
+    <br>
+    <h4>About Me:</h4>
+    <p>{{info.description}}</p>
+    <h4>Find me on:</h4>
+    <div>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-facebook"></i>
+    </div>
+
+  </div>
+
+  <hr>
+
+</div>

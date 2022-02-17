@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators} from '@angular/forms';
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -15,15 +14,26 @@ export class ContactComponent implements OnInit {
     newsletter: new FormControl("")
   })
   constructor() { }
-
   ngOnInit(): void {
   }
-
 submitForm() {
   if (this.contact.valid) {
      var a = this.contact.value;
   console.log(a);
   }
 }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

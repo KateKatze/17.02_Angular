@@ -1,14 +1,16 @@
-<h1 class="h1 text-center m-4">Contact</h1>
+<h1 class="h1 text-center m-4">Contact Me</h1>
 
 <!-- Contact Form -->
-<form class="d-flex flex-column" [formGroup]="contact" (ngSubmit)="submitForm()">
+<div class="container d-flex justify-content-center">
+  <form class="d-flex flex-column col-lg-6" [formGroup]="contact" (ngSubmit)="submitForm()">
+    
     <input type="text" placeholder="Your First Name" formControlName="firstName">
+    <br>
     <input type="text" placeholder="Your Last Name" formControlName="lastName">
+    <br>
     <input type="email" placeholder="Your E-Mail" formControlName="eMail">
+    <br>
     <textarea type="text" placeholder="Your Message" rows="6" formControlName="textArea"></textarea>
-    <div class="newsletter">
-        <input type="radio" formControlName="newsletter" value="Yes">
-        <label>Register for our Newsletter</label>
-    </div>
     <input type="submit" class="btn btn-success border-0 mt-3 mb-5" value="Submit">
-</form>
+  </form>
+</div>
